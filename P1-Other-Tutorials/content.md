@@ -11,3 +11,7 @@ This page compiles the ones that we think are the most useful. If you find somet
 
 - [Working with Scroll Views and Auto Layout](http://natashatherobot.com/ios-autolayout-scrollview/)
 
+#Memory Management: Automatic Reference Counting and that "weak" thing
+
+- [Memory Management: Automatic Reference Counting](https://github.com/feighter09/SA-2015-Apps-Additional-Resources/blob/add_arc/P1-Other-Tutorials/ARC_Demo.playground.zip?raw=true)
+
