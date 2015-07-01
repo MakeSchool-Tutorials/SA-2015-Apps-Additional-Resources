@@ -185,7 +185,7 @@ class  MakeSchoolCofounder: FounderDelegate {
     }
     
     func fireEmployee(employeeName:String) {
-        //remove from workforce
+        workForce.employees =  workForce.employees!.filter {$0 != employeeName}
     }
     
     func findPartnerships() {
@@ -216,6 +216,6 @@ makeschool.cofounders["Ashu"]?.hireEmployee("Tom")
 makeschool.students = [Student(name: "Mat", age: 20, id: "B5110", track: .Apps),Student(name: "Sara", age: 18, id: "A5110", track: .Apps),Student(name: "Norm", age: 19, id: "B5550", track: .Games)]
 
 //Get certain students
-let appTrackStudents =  makeschool.students?.filter {$0.track == Track.Apps}.map{$0.name}
+let appTrackStudents =  makeschool.students?.filter{$0.track == Track.Apps}.map{$0.name}
 
 
