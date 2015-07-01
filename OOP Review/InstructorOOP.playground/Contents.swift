@@ -5,13 +5,12 @@ import UIKit
 /*:TODOS
 
 
+Students do not have the instructions for this playground in their version of the playground. Instructors should provide the instructions an be  step-by-step in a slide such that everyone can work on the same step at the same time.
+
 Instructors should discuss the use of the explicit "self." in closures.
 
 Please review this before distributing to students and check for any errors and feel free to add some more appropriate optional usage and checking.
 
-For the OOP section, the student version of this file can either be provided as is or
-the instructions can be provided step-by-step in a slide such that everyone can work on
-the same step at the same time.
 
 End TODOS*/
 
@@ -24,10 +23,9 @@ Your tasks:
 1. Create the MakeSchool class and implement all functions.
 2. Create an initializer for the MakeSchool class in which the founding date, location, and name are set.
 3. Now create an instance of the MakeSchool class.
-4. Create a MakeSchoolCofounder class that conforms to the CofounderDelegate protocol. Initialize two MakeSchoolCofounder objects with how much time they work per week. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
-5. Now implement all methods of the CofounderDelegate
-6. One of MakeSchool's cofounders should now raise capital.
-7. The other cofounder should hire a few employees.
+4. Create a MakeSchoolCofounder class that conforms to the CofounderDelegate protocol. Initialize two MakeSchoolCofounder objects with how much time they work per week and their name. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
+6. One of MakeSchool's cofounders should now raise capital. Here the company is delegating this task to a cofounder (i.e a Delegate)
+7. The other cofounder should hire a few employees. The compnay is also delegating tasks to the other cofounder delegate.
 8. Now enroll students by setting the array of students to this provided array:
 [Student(name: "Mat", age: 20, id: "B5110", track: .Apps),
 Student(name: "Sara", age: 18, id: "A5110", track: .Apps),
@@ -36,6 +34,7 @@ Student(name: "Norm", age: 19, id: "B5550", track: .Games)]
 10. Create another instance of a business. Have MakeSchool acquire the business such that the appropriate function at least merges the employees. Feel free to do anything else that makes sense.
 11. Now play around and break things.
 */
+
 
 
 enum Track {
