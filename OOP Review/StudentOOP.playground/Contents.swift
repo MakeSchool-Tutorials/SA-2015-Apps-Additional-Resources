@@ -2,12 +2,7 @@
 
 import UIKit
 
-
 //*Swift OOP*/
-
-//Instructions will be provided.
-
-
 
 enum Track {
     
@@ -32,6 +27,7 @@ class Student {
     var age: Double
     
 }
+
 
 // This class keeps track of the company's current employees. Currently just has an array of names.
 class WorkForce {
@@ -65,6 +61,7 @@ protocol Bussiness {
     
 }
 
+
 //The school protocol inherits from and extends the Bussiness protocol (Just like class inheritance). This means that any class that conforms to this School protocol will need to have all of the properties and methods from both Bussiness and School.
 
 protocol  School: Bussiness{
@@ -77,9 +74,7 @@ protocol  FounderDelegate {
     
     var name:String {get set}
     
-    var finances: Finance! {get set}
-    
-    var workForce: WorkForce! {get set}
+    var myCompany: Bussiness {get set}
     
     var maximumWorkHoursPerWeek: Double! {get set}
     
@@ -92,5 +87,4 @@ protocol  FounderDelegate {
     func findPartnerships() -> Void
     
 }
-
 
