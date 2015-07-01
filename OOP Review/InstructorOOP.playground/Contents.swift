@@ -31,11 +31,11 @@ Your tasks:
 Student(name: "Sara", age: 18, id: "A5110", track: .Apps),
 Student(name: "Norm", age: 19, id: "B5550", track: .Games)]
 9. Generate an array of student names who are in the apps track. Don't use any loops. (Hint: Use two things in the lecture you watched yesterday.)
-10. Create another class that conforms to business. Create an instance of it and have MakeSchool acquire the business such that the appropriate function at least merges the employees. Feel free to do anything else that makes sense.
+10.  Create an instance of "smallerCompany" and have MakeSchool acquire the instance such that the appropriate function at least merges the employees. Feel free to do anything else that makes sense.
 11. Now play around and break things.
 */
 
-
+//Note: {get set} simply tells you that you are working with regular variable properties. You do not need to implement anything special when you see  {get set}. You can actaully just copy over the lines and delete the {get set} when you actually implement your class.
 
 enum Track {
     
@@ -72,6 +72,8 @@ class WorkForce {
 class Finance {
     var cash = 0.0
 }
+
+
 
 //This is a protocol that any Bussiness needs to conform to. This dictates that any class that conforms to this protocol will need to have all of these properties and methods.
 protocol Bussiness {
@@ -121,6 +123,40 @@ protocol  FounderDelegate {
     
 }
 
+
+
+class smallerCompany: Bussiness {
+    
+    
+    init (name:String,location:String,foundedDate:NSDate) {
+    
+    self.name = name
+    self.location = location
+    self.foundedDate = foundedDate
+    
+    }
+    
+    var name:String
+    
+    var location:String
+    
+    var foundedDate:NSDate
+    
+    var finances = Finance()
+    
+    var workForce = WorkForce()
+    
+    var cofounders = [String:FounderDelegate]()
+    
+    func acquireAnotherBussiness(bussiness:Bussiness) {
+    //Don't need to do anything for this object
+    }
+    
+    func launchNewProduct(productName:String){
+     //Don't need to do anything for this object
+    }
+    
+}
 
 /*:Potential Solution*/
 

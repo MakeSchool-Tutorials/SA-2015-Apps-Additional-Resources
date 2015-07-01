@@ -2,7 +2,10 @@
 
 import UIKit
 
-//*Swift OOP*/
+//*Swift OOP playground instructions will be provided by instructors*/
+
+
+//Note: {get set} simply tells you that you are working with regular variable properties. You do not need to implement anything special when you see  {get set}. You can actaully just copy over the lines and delete the {get set} when you actually implement your class.
 
 enum Track {
     
@@ -39,6 +42,8 @@ class WorkForce {
 class Finance {
     var cash = 0.0
 }
+
+
 
 //This is a protocol that any Bussiness needs to conform to. This dictates that any class that conforms to this protocol will need to have all of these properties and methods.
 protocol Bussiness {
@@ -88,3 +93,37 @@ protocol  FounderDelegate {
     
 }
 
+
+
+class smallerCompany: Bussiness {
+    
+    
+    init (name:String,location:String,foundedDate:NSDate) {
+        
+        self.name = name
+        self.location = location
+        self.foundedDate = foundedDate
+        
+    }
+    
+    var name:String
+    
+    var location:String
+    
+    var foundedDate:NSDate
+    
+    var finances = Finance()
+    
+    var workForce = WorkForce()
+    
+    var cofounders = [String:FounderDelegate]()
+    
+    func acquireAnotherBussiness(bussiness:Bussiness) {
+        //Don't need to do anything for this object
+    }
+    
+    func launchNewProduct(productName:String){
+        //Don't need to do anything for this object
+    }
+    
+}
