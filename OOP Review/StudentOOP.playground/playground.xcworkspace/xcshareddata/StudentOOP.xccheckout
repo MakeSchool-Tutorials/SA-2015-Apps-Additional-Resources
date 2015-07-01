@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>735F90CE-178B-4458-902F-CD5445513D01</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StudentOOP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>67403BA3B1B06F611325E64084DA276BC09350C0</key>
+		<string>https://github.com/zleman1593/SA-2015-Apps-Additional-Resources.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OOP Review/StudentOOP.playground</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>67403BA3B1B06F611325E64084DA276BC09350C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zleman1593/SA-2015-Apps-Additional-Resources.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>67403BA3B1B06F611325E64084DA276BC09350C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67403BA3B1B06F611325E64084DA276BC09350C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SA-2015-Apps-Additional-Resources</string>
+		</dict>
+	</array>
+</dict>
+</plist>

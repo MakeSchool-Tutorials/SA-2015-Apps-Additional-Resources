@@ -8,7 +8,7 @@ Extend the playground to cover the "weak" concept.
 
 Instructors should discuss the use of the explicit "self." in closures.
 
-Please review this before distributing to students and check for any errors and feel free to add some more appropriate optional ussage and checking.
+Please review this before distributing to students and check for any errors and feel free to add some more appropriate optional usage and checking.
 
 For the OOP section, the student version of this file can either be provided as is or
 the instructions can be provided step-by-step in a slide such that everyone can work on
@@ -16,36 +16,6 @@ the same step at the same time.
 
 End TODOS*/
 
-/*: Confusing properties*/
-class someProperties {
-    
-    
-    /*:Calculated once, the first time you acess property. Then stored for reuse*/
-    lazy var first: NSDate = {
-        
-        return NSDate()
-        }()
-    
-    
-    
-    /*:Recalculated every time you acess property*/
-    var third: NSDate {
-        return NSDate()
-    }
-    
-    
-    /*: Returns a closure. Closure needs to be execued to get the date.*/
-    var second: () -> NSDate = {
-        
-        return NSDate()
-    }
-}
-
-let test = someProperties().first
-
-let test2 = someProperties().second()
-
-let test3 = someProperties().third
 
 //*Swift OOP*/
 
