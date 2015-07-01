@@ -206,7 +206,7 @@ class  Ashu: FounderDelegate {
     }
     
     func fireEmployee(employeeName:String) {
-        //remove from workforce
+         workForce.employees =  workForce.employees!.filter {$0 != employeeName}
     }
     func findPartnerships() {
         
