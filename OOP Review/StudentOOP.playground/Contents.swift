@@ -11,7 +11,7 @@ Your tasks:
 1. Create the MakeSchool class and implement all functions.
 2. Create an initializer for the MakeSchool class in which the founding date, location, and name are set.
 3. Now create an instance of the MakeSchool class.
-4. Create two confounder objects (Using a class that conforms to the CofounderDelegate protocol). Initialize them with how much time they work per week. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
+4. Create a MakeSchoolCofounder class that conforms to the CofounderDelegate protocol. Initialize two MakeSchoolCofounder objects with how much time they work per week and their name. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
 5. Now implement all methods of the CofounderDelegate
 6. One of MakeSchool's cofounders should now raise capital.
 7. The other cofounder should hire a few employees.
@@ -92,6 +92,8 @@ protocol  School: Bussiness{
 
 //This is the Delegate protocol for a class that implements the school protocol.
 protocol  FounderDelegate {
+    
+    var name:String {get set}
     
     var finances: Finance! {get set}
     

@@ -24,7 +24,7 @@ Your tasks:
 1. Create the MakeSchool class and implement all functions.
 2. Create an initializer for the MakeSchool class in which the founding date, location, and name are set.
 3. Now create an instance of the MakeSchool class.
-4. Create two confounder objects (Using a class that conforms to the CofounderDelegate protocol). Initialize them with how much time they work per week. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
+4. Create a MakeSchoolCofounder class that conforms to the CofounderDelegate protocol. Initialize two MakeSchoolCofounder objects with how much time they work per week. Add the two cofounders to the cofounders dictionary. The key in the dictionary should be the cofounder's name.
 5. Now implement all methods of the CofounderDelegate
 6. One of MakeSchool's cofounders should now raise capital.
 7. The other cofounder should hire a few employees.
@@ -36,7 +36,6 @@ Student(name: "Norm", age: 19, id: "B5550", track: .Games)]
 10. Create another instance of a business. Have MakeSchool acquire the business such that the appropriate function at least merges the employees. Feel free to do anything else that makes sense.
 11. Now play around and break things.
 */
-
 
 
 enum Track {
@@ -107,6 +106,8 @@ protocol  School: Bussiness{
 //This is the Delegate protocol for a class that implements the school protocol.
 protocol  FounderDelegate {
     
+    var name:String {get set}
+    
     var finances: Finance! {get set}
     
     var workForce: WorkForce! {get set}
@@ -161,11 +162,14 @@ class MakeSchool: School {
     }
 }
 
-class  Jeremy: FounderDelegate {
+class  MakeSchoolCofounder: FounderDelegate {
     
-    init(maximumWorkHoursPerWeek:Double){
+    init(name:String,maximumWorkHoursPerWeek:Double){
+        self.name = name
         self.maximumWorkHoursPerWeek = maximumWorkHoursPerWeek
     }
+    
+    var name:String
     
     var finances: Finance!
     
@@ -191,42 +195,13 @@ class  Jeremy: FounderDelegate {
     
 }
 
-class  Ashu: FounderDelegate {
-    init(maximumWorkHoursPerWeek:Double){
-        self.maximumWorkHoursPerWeek = maximumWorkHoursPerWeek
-    }
-    
-    var finances: Finance!
-    
-    var workForce: WorkForce!
-    
-    var maximumWorkHoursPerWeek: Double!
-    
-    func raiseCapital(capital:Double) {
-        finances.cash += capital
-    }
-    
-    
-    func hireEmployee(employeeName:String) {
-        workForce.employees!.append(employeeName)
-    }
-    
-    func fireEmployee(employeeName:String) {
-         workForce.employees =  workForce.employees!.filter {$0 != employeeName}
-    }
-    func findPartnerships() {
-        
-    }
-    
-}
-
 
 //Create MakeSchool instance
 let makeschool = MakeSchool(name: "MakeSchool", location: "San Fransisco", foundedDate: NSDate())
 
 //Add cofounders
-makeschool.cofounders["Jeremy"] = Jeremy(maximumWorkHoursPerWeek: 126)
-makeschool.cofounders["Ashu"] = Ashu(maximumWorkHoursPerWeek: 125.4)
+makeschool.cofounders["Jeremy"] = MakeSchoolCofounder(name: "Jeremy", maximumWorkHoursPerWeek: 126)
+makeschool.cofounders["Ashu"] = MakeSchoolCofounder(name:"Ashu", maximumWorkHoursPerWeek: 125.4)
 
 
 
