@@ -51,10 +51,6 @@ Start by describing, almost like you are telling a story, how a typical user wil
 Next list apps you think have a similar look and feel to what you want for your app. Refer back to them for inspiration on how to make interacting with your app consistent and rewarding.
 
 
-Views, View Controllers, and other Classes: List all Views, View Controllers, and other Swift classes you will need to make you app. 
-
-Data Models: List all Parse data models your app will require.
-
 #MVP Milestones 
 
 This is the section that should get updated the most often. You will list what tasks you plan on completing every week. This is how you will realize if you are falling behind and need to cut more features.
@@ -86,7 +82,11 @@ Only once you have a list of tasks that fit in 25 days should you start dividing
 
 #Wrapping up
 
-Write out all the Views, View Controllers, Classes, and Data Models your app will require under the Technical section.
+Fill out the rest of the Technical section.
+
+Views, View Controllers, and other Classes: List all Views, View Controllers, and other Swift classes you will need to make you app. 
+
+Data Models: List all Parse data models your app will require.
 
 Go back over all sections and make sure everything is explained as concisely as possible.  
 
