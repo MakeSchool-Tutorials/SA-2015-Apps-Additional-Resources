@@ -3,8 +3,6 @@ title: "Create an App Design Document"
 slug: App-Design-Document
 ---
 
-#App Design Documents
-
 An App Design Document (ADD) is meant to detail the objective, audience, experience, technical requirements, and development milestones for your app.
 
 It is a living document. You should be changing and tweaking it at least twice a week.
