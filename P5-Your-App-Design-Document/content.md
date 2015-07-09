@@ -15,9 +15,9 @@ Go to Github.com and create a new project. When viewing your empty project, ther
 
 Create a new page in your project's Wiki and name it "ADD".
 
-Create five main sections: Objective, Audience, Experience, Technical, and MVP Milestones.
+Create five main sections (click 'h3' or 'h2' before typing section): Objective, Audience, Experience, Technical, and MVP Milestones.
 
-Inside of Technical, create four subsections: External Services, Screens, View/View Controllers/Classes, Data Models.
+Inside of Technical, create four subsections (use a smaller header for this one): External Services, Screens, View/View Controllers/Classes, Data Models.
 
 Inside of MVP Milestones list each remaining week of development.
 
