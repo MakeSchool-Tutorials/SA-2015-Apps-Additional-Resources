@@ -11,9 +11,9 @@ Once you have made an ADD, it becomes much easier to visualize everything you ha
 
 Whever you decide to change some aspect of your app's design or development schedule, make sure to update your ADD!
 
-Go to Github.com and create a new project. When viewing your empty project, there will be a link in the right sidebar that says "Wiki".
+Go to Github.com and create a new repository. When viewing your empty repository, there will be a link in the right sidebar that says "Wiki".
 
-Create a new page in your project's Wiki and name it "ADD".
+Create a new page in your repository's Wiki and name it "ADD".
 
 Create five main sections (click 'h3' or 'h2' before typing section): Objective, Audience, Experience, Technical, and MVP Milestones.
 
