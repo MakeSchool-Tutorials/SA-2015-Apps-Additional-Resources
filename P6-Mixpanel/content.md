@@ -35,7 +35,7 @@ As a first step, we need to install the _CocoaPods_ software.
 > [action]
 > Open a terminal and enter the following line:
 >
->    sudo gem install cocoapods
+>        sudo gem install cocoapods
 
 After a while the installation should complete successfuly!
 
@@ -46,7 +46,7 @@ Now we can create a _Podfile_ that will allow us to declare dependencies for our
 > [action]
 > Open the root directory of your project in a terminal and type:
 >
->    pod init
+>        pod init
 
 Now a _Podfile_ with some skeleton content will be created. Open the _Podfile_ in your favorite text editor. It should look like this:
 
@@ -69,20 +69,20 @@ It will help us to convert time spans into human readable strings.
 > [action]
 > Add the _Mixpanel_ dependency to your _Podfile_ so that it looks like this:
 >
->    # Uncomment this line to define a global platform for your project
->    # platform :ios, '6.0'
->
->    target 'ProjectName' do
->      pod 'Mixpanel'
->    end
->
->    target 'ProjectNameTests' do
->
->    end
+>        # Uncomment this line to define a global platform for your project
+>        # platform :ios, '6.0'
+>    
+>        target 'ProjectName' do
+>          pod 'Mixpanel'
+>        end
+>    
+>        target 'ProjectNameTests' do
+>    
+>        end
 >
 > Then, return to the command line and run:
 >
->    pod install
+>        pod install
 
 Now your dependencies will be download and installed.
 
@@ -99,7 +99,7 @@ Mixpanel is written in Objetive-C, Apple's old default programming language for 
 > [action]
 > Add the _Mixpanel_ library to your project's' bridging header by adding the following line:
 >
->    #import "Mixpanel.h"
+>        #import "Mixpanel.h"
 
 #Signing up for Mixpanel
 
@@ -115,9 +115,9 @@ You should see something like this:
 > [action]
 > Now we can finally use Mixpanel. Open _AppDelegate.swift_ and add the following to the `application` method so that it gets run after the app is launched.
 >
->    Mixpanel.sharedInstanceWithToken(YOUR_TOKEN_HERE)
->    let mixpanel: Mixpanel = Mixpanel.sharedInstance()
->    mixpanel.track("App launched")
+>        Mixpanel.sharedInstanceWithToken(YOUR_TOKEN_HERE)
+>        let mixpanel: Mixpanel = Mixpanel.sharedInstance()
+>        mixpanel.track("App launched")
 
 You can find your token by clicking on *Account* then *Projects* on the [Mixpanel website](https://mixpanel.com/). Copy and paste your token where `YOUR_TOKEN_HERE` is in the code you just added.
 
