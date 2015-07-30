@@ -67,10 +67,12 @@ Now we are ready to add a dependency to this file. For the feature we want to im
 It will help us to convert time spans into human readable strings.
 
 > [action]
-> Add the _Mixpanel_ dependency to your _Podfile_ so that it looks like this:
+> Add the _Mixpanel_ dependency to your _Podfile_ and add `use_frameworks!` at the top so that it looks like this:
 >
 >        # Uncomment this line to define a global platform for your project
 >        # platform :ios, '6.0'
+>
+>       use_frameworks!
 >    
 >        target 'ProjectName' do
 >          pod 'Mixpanel'
@@ -92,14 +94,16 @@ Now your dependencies will be download and installed.
 > **Close** your Xcode project. Then open the new **workspace** that _CocoaPods_ has generated:
 > ![image](workspace.png)
 
-#Importing Mixpanel
+<!-- NOT REQUIRED because of use_frameworks! config
 
-Mixpanel is written in Objetive-C, Apple's old default programming language for iOS. It needs to be imported through the the _Bridging Header_.
+#Importing Mixpanel-->
 
-> [action]
-> Add the _Mixpanel_ library to your project's' bridging header by adding the following line:
->
->        #import "Mixpanel.h"
+<!--Mixpanel is written in Objetive-C, Apple's old default programming language for iOS. It needs to be imported through the the _Bridging Header_.-->
+
+<!--> [action]-->
+<!--> Add the _Mixpanel_ library to your project's' bridging header by adding the following line:-->
+<!-->-->
+<!-->        #import "Mixpanel.h"-->
 
 #Signing up for Mixpanel
 
@@ -113,7 +117,11 @@ You should see something like this:
 #Setting up Mixpanel
 
 > [action]
-> Now we can finally use Mixpanel. Open _AppDelegate.swift_ and add the following to the `application` method so that it gets run after the app is launched.
+> Now we can finally use Mixpanel. Open _AppDelegate.swift_ and add this import to the top:
+>
+>       import Mixpanel
+>
+> Now add the following to the `application` method so that it gets run after the app is launched.
 >
 >        Mixpanel.sharedInstanceWithToken(YOUR_TOKEN_HERE)
 >        let mixpanel: Mixpanel = Mixpanel.sharedInstance()
