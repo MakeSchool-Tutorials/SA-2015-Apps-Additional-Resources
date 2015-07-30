@@ -94,17 +94,6 @@ Now your dependencies will be download and installed.
 > **Close** your Xcode project. Then open the new **workspace** that _CocoaPods_ has generated:
 > ![image](workspace.png)
 
-<!-- NOT REQUIRED because of use_frameworks! config
-
-#Importing Mixpanel-->
-
-<!--Mixpanel is written in Objetive-C, Apple's old default programming language for iOS. It needs to be imported through the the _Bridging Header_.-->
-
-<!--> [action]-->
-<!--> Add the _Mixpanel_ library to your project's' bridging header by adding the following line:-->
-<!-->-->
-<!-->        #import "Mixpanel.h"-->
-
 #Signing up for Mixpanel
 
 > [action]
