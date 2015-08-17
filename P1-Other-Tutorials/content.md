@@ -13,5 +13,5 @@ This page compiles the ones that we think are the most useful. If you find somet
 
 #Memory Management: Automatic Reference Counting and that "weak" thing
 
-- [Memory Management: Automatic Reference Counting](https://github.com/feighter09/SA-2015-Apps-Additional-Resources/blob/add_arc/P1-Other-Tutorials/ARC_Demo.playground.zip?raw=true)
+- [Memory Management: Automatic Reference Counting](https://github.com/MakeSchool-Tutorials/SA-2015-Apps-Additional-Resources/raw/master/P1-Other-Tutorials/ARC_Demo.playground.zip)
 
