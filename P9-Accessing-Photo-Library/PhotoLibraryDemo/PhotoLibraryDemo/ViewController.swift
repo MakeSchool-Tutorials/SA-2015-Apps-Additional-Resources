@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
+    
+    func getRandomPhoto() {
+        let imgManager = PHImageManager.defaultManager()
+        var requestOptions = PHImageRequestOptions()
+        requestOptions.synchronous = true // This is necessary to return the full image, not just a thumbnail.
+        var fetchOptions = PHFetchOptions()
+        
+        
+    }
     
     
     override func viewDidLoad() {
