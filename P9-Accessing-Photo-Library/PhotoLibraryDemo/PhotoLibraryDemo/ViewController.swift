@@ -68,6 +68,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func filterPhoto(sender: UIButton) {
+        
+        // We only have one filter in this example: sepia.
+        // We set up the filter here:
+        let context = CIContext(options:nil)
+        let unfiltered = CIImage(image: imageView.image!)
+        let filter = CIFilter(name: "CISepiaTone")
+        filter.setValue(unfiltered, forKey: kCIInputImageKey)
+        filter.setValue(0.5, forKey: kCIInputIntensityKey)
+            
+        // And apply it here.
+        let originalOrientation = self.imageView.image!.imageOrientation;
+        let originalScale = imageView.image!.scale
+            
+        let cgimg = context.createCGImage(filter.outputImage, fromRect: filter.outputImage.extent())
+        
+        let filtered = UIImage(CGImage: cgimg, scale: originalScale, orientation: originalOrientation)!
+        imageView.image = filtered
+        
     }
     
     
