@@ -72,6 +72,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func savePhoto(sender: UIButton) {
+        var imageToSave = imageView.image!
+        PHPhotoLibrary.sharedPhotoLibrary().performChanges( {
+            PHAssetChangeRequest.creationRequestForAssetFromImage(imageToSave)},
+            completionHandler: {(success, error) in
+                NSLog("\nCreated Image -> %@", (success ? "Success":"Error!"))
+        })
     }
     
     
