@@ -37,8 +37,12 @@ class ViewController: UIViewController {
                 // Proceed with the request for the full image.
                 imgManager.requestImageForAsset(photoAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.AspectFill, options: requestOptions, resultHandler: { (image, info) in
                     
-                    // Place the retrieved image in the imageView.
-                    self.imageView.image = image
+                    // Place the retrieved image in the imageView. We do this on the main thread
+                    // so that the UI will update immediately.
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.imageView.image = image
+                    })
+                    
                 })
             }
         }
@@ -99,13 +103,6 @@ class ViewController: UIViewController {
         } else {
             self.getRandomPhoto()
         }
-        
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        self.getRandomPhoto()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
