@@ -13,10 +13,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var deleteButton: UIButton!
-    @IBOutlet weak var filterButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
-    
     var photoAsset : PHAsset = PHAsset()
     
     func getRandomPhoto() {
@@ -49,6 +45,16 @@ class ViewController: UIViewController {
             
         }
         
+    }
+    
+    @IBAction func deletePhoto(sender: UIButton) {
+    }
+    
+    @IBAction func filterPhoto(sender: UIButton) {
+    }
+    
+    
+    @IBAction func savePhoto(sender: UIButton) {
     }
     
     
