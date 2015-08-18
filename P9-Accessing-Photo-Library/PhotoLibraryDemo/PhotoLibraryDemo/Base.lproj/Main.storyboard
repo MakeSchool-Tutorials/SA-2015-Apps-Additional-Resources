@@ -56,6 +56,12 @@
                             <constraint firstItem="vQf-9u-AfZ" firstAttribute="centerX" secondItem="eyd-iF-q1F" secondAttribute="centerX" id="pyg-8n-VIX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="eyd-iF-q1F" id="eFD-qo-KI6"/>
+                        <outlet property="filterButton" destination="vQf-9u-AfZ" id="WHw-mS-5fB"/>
+                        <outlet property="imageView" destination="0hR-Lk-MTm" id="66I-PY-cRm"/>
+                        <outlet property="saveButton" destination="ckQ-Fk-jF2" id="kcE-RS-im0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
